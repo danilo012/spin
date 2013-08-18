@@ -1,0 +1,57 @@
+@import "compass";
+$wheel_height: 400px;
+$wheel_width: $wheel_height;
+
+.spin_widget{
+  position: relative;
+  color: #fff;
+  background-color: black;
+  height: 500px;
+  .hide{
+      display: none;
+  }
+  
+  .content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    margin-top: -150px;
+    margin-left: 40px;
+    text-align: center;
+    h1{
+      text-transform: uppercase;
+      .highlight{
+        color: orange;
+      }
+    }
+    .btn.play {
+      width: 262px;
+      height: 77px;
+      margin: 0 auto;
+    }
+  }
+    
+  .wheel_holder{
+    .assests{
+      display: none;
+    }
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -($wheel_width/2 + 200px);
+    margin-top: -$wheel_height/2;
+    text-align: center;
+  }
+}
+
+.btn{
+  border: none;
+  text-indent: -9999;
+  font-size: 0;  
+  &.play{
+    width: 262px;
+    height: 77px;
+    background: url('http://s24.postimg.org/8ub7mziqd/btn_spin_play.png');
+  }
+}
